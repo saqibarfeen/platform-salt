@@ -11,8 +11,8 @@
 
 {%- set default_version_name = 'jdk1.8.0_74' %}
 {%- set default_prefix       = '/usr/share/java' %}
-{%- set default_source_url   = 'http://download.oracle.com/otn-pub/java/jdk/8u74-b02/jdk-8u74-linux-x64.tar.gz' %}
-{%- set default_jce_url      = 'http://download.oracle.com/otn-pub/java/jce/8/jce_policy-8.zip' %}
+{%- set default_source_url   = 'http://172.16.10.30/mirror_misc/jdk-8u74-linux-x64.tar.gz' %}
+{%- set default_jce_url      = 'http://172.16.10.30/mirror_misc/jce_policy-8.zip' %}
 {%- set default_dl_opts      = '-b oraclelicense=accept-securebackup-cookie -L' %}
 
 {%- set version_name   = g.get('version_name', p.get('version_name', default_version_name)) %}
